@@ -18,24 +18,29 @@ const Form = (props) => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        style= {{ width: '90vw' }}
         type="text"
+        placeholder="Name"
         name="name"
         value={formData.name}
         onChange={handleChange}
       />
       <input
+        style= {{ width: '90vw' }}
         type="number"
         name="age"
         value={formData.age}
         onChange={handleChange}
       />
       <input
+        style= {{ width: '90vw' }}
         type="text"
+        placeholder="Image URL"
         name="img"
         value={formData.img}
         onChange={handleChange}
       />
-      <input type="submit" value={props.label} />
+      <input type="submit" value={props.label} style= {{ width: "15vw" }} />
     </form>
   );
 };
